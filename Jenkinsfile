@@ -8,14 +8,15 @@ pipeline {
             }
         }
         stage('Restore PACKAGES') {
-             
+              steps {
             sh(script:"dotnet restore")
-            
+              }
         }
         
         stage('Publish') {
-            
+             steps {
                 sh(script:"dotnet publish -c Release -o out")
+             }
             
         }
         stage('Build') {
