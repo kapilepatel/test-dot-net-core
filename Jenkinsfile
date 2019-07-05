@@ -16,16 +16,16 @@ pipeline {
         }
         
         stage('Publish') {
-            dir("test-dot-net-core"){
-                steps {
+            steps {
+                dir("test-dot-net-core"){                
                     sh(script:"dotnet publish -c Release -o out")
                 }
             }
             
         }
         stage('Build') {
-            dir("test-dot-net-core"){
-                steps {
+            steps {
+                dir("test-dot-net-core"){                
                     sh(script:"dotnet out/AG_MS_Authentication.dll")
                 }
             }
