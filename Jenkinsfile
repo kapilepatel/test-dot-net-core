@@ -8,11 +8,9 @@ pipeline {
             }
         }
         stage('Restore PACKAGES') {
-            steps {
-                    dir ("auth-dot-net-core"){
-                        dir ("test-dot-net-core"){
-                            sh(script:"dotnet restore")
-                        }
+            steps {                   
+                    dir ("test-dot-net-core"){
+                        sh(script:"dotnet restore")                   
                     }
             }              
         }
