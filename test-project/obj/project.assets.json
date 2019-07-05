@@ -9507,11 +9507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\test\\core\\auth-api-dummy\\test-project\\test-project.csproj",
+      "projectUniqueName": "e:\\test\\core\\auth-api-dummy\\test-dot-net-core\\test-project\\test-project.csproj",
       "projectName": "test-project",
-      "projectPath": "E:\\test\\core\\auth-api-dummy\\test-project\\test-project.csproj",
+      "projectPath": "e:\\test\\core\\auth-api-dummy\\test-dot-net-core\\test-project\\test-project.csproj",
       "packagesPath": "C:\\Users\\KPatel\\.nuget\\packages\\",
-      "outputPath": "E:\\test\\core\\auth-api-dummy\\test-project\\obj\\",
+      "outputPath": "e:\\test\\core\\auth-api-dummy\\test-dot-net-core\\test-project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9528,8 +9528,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "E:\\test\\core\\auth-api-dummy\\test-dot-net-core\\AG_MS_Authentication.csproj": {
-              "projectPath": "E:\\test\\core\\auth-api-dummy\\test-dot-net-core\\AG_MS_Authentication.csproj"
+            "e:\\test\\core\\auth-api-dummy\\test-dot-net-core\\test-dot-net-core\\AG_MS_Authentication.csproj": {
+              "projectPath": "e:\\test\\core\\auth-api-dummy\\test-dot-net-core\\test-dot-net-core\\AG_MS_Authentication.csproj"
             }
           }
         }

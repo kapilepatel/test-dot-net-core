@@ -13900,11 +13900,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\test\\core\\auth-api-dummy\\test-dot-net-core\\AG_MS_Authentication.csproj",
+      "projectUniqueName": "e:\\test\\core\\auth-api-dummy\\test-dot-net-core\\test-dot-net-core\\AG_MS_Authentication.csproj",
       "projectName": "AG_MS_Authentication",
-      "projectPath": "e:\\test\\core\\auth-api-dummy\\test-dot-net-core\\AG_MS_Authentication.csproj",
+      "projectPath": "e:\\test\\core\\auth-api-dummy\\test-dot-net-core\\test-dot-net-core\\AG_MS_Authentication.csproj",
       "packagesPath": "C:\\Users\\KPatel\\.nuget\\packages\\",
-      "outputPath": "e:\\test\\core\\auth-api-dummy\\test-dot-net-core\\obj\\",
+      "outputPath": "e:\\test\\core\\auth-api-dummy\\test-dot-net-core\\test-dot-net-core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -9,6 +9,7 @@ pipeline {
         }
         stage('Restore PACKAGES') {
               steps {
+                 sh(script:"cd test-dot-net-core")
                  sh(script:"dotnet restore")
               }
         }
