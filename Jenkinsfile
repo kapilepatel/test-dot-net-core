@@ -34,7 +34,8 @@ pipeline {
         stage('Build') {
             steps {
                 dir("test-dot-net-core"){                
-                    sh(script:"dotnet out/AG_MS_Authentication.dll")
+                    //sh(script:"dotnet out/AG_MS_Authentication.dll")
+                    sh(script:"nohup dotnet AG_MS_Authentication.dll &")
                 }
             }
         }
