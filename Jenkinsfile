@@ -15,21 +15,21 @@ pipeline {
             }              
         }
         
-        // stage('Publish') {
-        //     dir("test-dot-net-core"){
-        //         steps {
-        //             sh(script:"dotnet publish -c Release -o out")
-        //         }
-        //     }
+        stage('Publish') {
+            dir("test-dot-net-core"){
+                steps {
+                    sh(script:"dotnet publish -c Release -o out")
+                }
+            }
             
-        // }
-        // stage('Build') {
-        //     dir("test-dot-net-core"){
-        //         steps {
-        //             sh(script:"dotnet out/AG_MS_Authentication.dll")
-        //         }
-        //     }
-        // }
+        }
+        stage('Build') {
+            dir("test-dot-net-core"){
+                steps {
+                    sh(script:"dotnet out/AG_MS_Authentication.dll")
+                }
+            }
+        }
     }
 
 
