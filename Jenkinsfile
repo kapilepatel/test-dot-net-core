@@ -14,6 +14,14 @@ pipeline {
                     }
             }              
         }
+
+        stage('Testing') {
+            steps {                   
+                    dir ("test-project"){
+                        sh(script:"dotnet test")                   
+                    }
+            }              
+        }
         
         stage('Publish') {
             steps {
