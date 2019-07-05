@@ -7,13 +7,15 @@ pipeline {
                     git url: 'https://github.com/kapilepatel/test-dot-net-core', branch: 'master'
             }
         }
-        // stage('Restore PACKAGES') {
-        //     steps {
-        //         //dir ("test-dot-net-core"){
-        //             //sh(script:"dotnet restore")
-        //         //}
-        //       }              
-        // }
+        stage('Restore PACKAGES') {
+            steps {
+                    dir ("auth-dot-net-core"){
+                        dir ("test-dot-net-core"){
+                            sh(script:"dotnet restore")
+                        }
+                    }
+            }              
+        }
         
         // stage('Publish') {
         //     dir("test-dot-net-core"){
