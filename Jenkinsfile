@@ -8,11 +8,11 @@ pipeline {
             }
         }
         stage('Restore PACKAGES') {
-            
-                dir("test-dot-net-core"){
-                    sh(script:"dotnet restore")
-                }
-                          
+            steps {
+                //dir ("test-dot-net-core"){
+                    //sh(script:"dotnet restore")
+                //}
+              }              
         }
         
         // stage('Publish') {
