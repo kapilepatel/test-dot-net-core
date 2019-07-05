@@ -8,21 +8,26 @@ pipeline {
             }
         }
         stage('Restore PACKAGES') {
-              steps {
-                 sh(script:"cd test-dot-net-core")
-                 sh(script:"dotnet restore")
-              }
+            steps {
+                dir("test-dot-net-core"){
+                    sh(script:"dotnet restore")
+                }
+              }              
         }
         
         stage('Publish') {
-             steps {
-                sh(script:"dotnet publish -c Release -o out")
-             }
+            dir("test-dot-net-core"){
+                steps {
+                    sh(script:"dotnet publish -c Release -o out")
+                }
+            }
             
         }
         stage('Build') {
-            steps {
-                sh(script:"dotnet out/AG_MS_Authentication.dll")
+            dir("test-dot-net-core"){
+                steps {
+                    sh(script:"dotnet out/AG_MS_Authentication.dll")
+                }
             }
         }
     }
